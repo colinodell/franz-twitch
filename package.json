@@ -1,26 +1,17 @@
 {
-  "name": "twitch",
+  "id": "twitch",
+  "name": "Twitch",
   "version": "1.0.0",
   "description": "Twitch chat",
   "main": "index.js",
-  "author": "RedbackThomson <redbackthomson@hotmail.com> (http://rdbk.tv/)",
+  "author": "Colin O'Dell <colinodell@gmail.com>; RedbackThomson <redbackthomson@hotmail.com>",
   "license": "MIT",
   "config": {
-    "serviceURL": "https://www.twitch.tv/{teamID}/chat",
-    "serviceName": "Twitch",
-    "message": "Twitch chat allows you to not only interact with fellow members of the Twitch Community, but Broadcasters as well",
-    "popup": [],
+    "serviceURL": "https://www.twitch.tv/{teamId}/chat",
+    "hasTeamId": true,
+    "urlInputPrefix": "https://go.twitch.tv/",
     "hasNotificationSound": true,
     "hasIndirectMessages": false,
-    "hasTeamID": true,
-    "wording": {
-      "url": "twitch.tv",
-      "team": "Channel"
-    },
-    "customURL": false,
-    "hostedOnly": false,
-    "webviewOptions": {
-      "disablewebsecurity": ""
-    }
+    "message": "Twitch chat allows you to not only interact with fellow members of the Twitch Community, but Broadcasters as well."
   }
 }
